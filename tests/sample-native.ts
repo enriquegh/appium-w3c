@@ -12,8 +12,6 @@ describe("Native Test", () => {
     })
 
     it("should do an /actions command", ()=> {
-
-        // if (browser.capabilities.platformName != "iOS") { // /actions not supported on iOS
             
             browser.performActions([{
                 "type": "pointer",
@@ -38,7 +36,6 @@ describe("Native Test", () => {
                     {"type": "pointerUp", "button": 0}
                 ]
             }]);
-        // }
     })
         
 })
