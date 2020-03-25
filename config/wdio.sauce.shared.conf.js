@@ -1,13 +1,6 @@
 const cloneCapabilities = require("../utils")
 
 // process.env.NODE_DEBUG = "request";
-const NUM_OF_INSTANCES = process.env.WDIO_CAP_MULTIPLIER || 5;
-const baseCapability = {
-
-    platformName:"macOS 10.13",
-    browserName: 'googlechrome',
-    browserVersion: 'latest',
-}
 
 exports.config = {
     // debug: true,
@@ -15,9 +8,7 @@ exports.config = {
 
     runner: 'local',
     user: process.env.SAUCE_USERNAME,
-    key: process.env.SAUCE_ACCESS_KEY,
-    sauceConnect: true,
-    
+    key: process.env.SAUCE_ACCESS_KEY,    
     
     specs: [
         './tests/*.ts'
@@ -28,7 +19,6 @@ exports.config = {
     ],
 
     maxInstances: 20,
-    capabilities: cloneCapabilities(baseCapability, NUM_OF_INSTANCES),
     logLevel: 'debug',
     // logLevels: {
         // webdriver: 'info',
@@ -41,13 +31,6 @@ exports.config = {
     framework: 'mocha',
     reporters: [
         'spec',
-        ['junit', {
-            outputDir: './junit_xml/',
-            outputFileFormat: function(options) {
-                return `wdio-results-${options.cid}.xml`
-            }
-        }]
-
     ],
     
     //
