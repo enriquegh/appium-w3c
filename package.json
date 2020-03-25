@@ -31,7 +31,7 @@
     "ios.local.web" : "wdio config/wdio.local.ios.web.conf.js",
     "ios.local" : "npm run ios.local.native && npm run ios.local.web",
     "android.sauce.native" : "wdio config/wdio.sauce.android.native.conf.js",
-    "android.sauce.web" : "",
+    "android.sauce.web" : "wdio config/wdio.sauce.android.web.conf.js",
     "android.sauce" : "",
     "ios.sauce.native" : "wdio config/wdio.sauce.ios.native.conf.js",
     "ios.sauce.web" : "",
