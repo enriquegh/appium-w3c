@@ -36,7 +36,7 @@
     "ios.sauce.native" : "wdio config/wdio.sauce.ios.native.conf.js",
     "ios.sauce.web" : "wdio config/wdio.sauce.ios.web.conf.js",
     "ios.sauce" : "",
-    "test": "wdio"
+    "test": "echo \"Please see README or package.json for available options.\" && exit 1"
   },
   "author": "Enrique Gonzalez",
   "license": "ISC"
