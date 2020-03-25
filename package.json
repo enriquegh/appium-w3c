@@ -34,7 +34,7 @@
     "android.sauce.web" : "wdio config/wdio.sauce.android.web.conf.js",
     "android.sauce" : "",
     "ios.sauce.native" : "wdio config/wdio.sauce.ios.native.conf.js",
-    "ios.sauce.web" : "",
+    "ios.sauce.web" : "wdio config/wdio.sauce.ios.web.conf.js",
     "ios.sauce" : "",
     "test": "wdio"
   },
