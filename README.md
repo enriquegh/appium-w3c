@@ -1,5 +1,7 @@
 # appium-w3c
 
+Repository with W3C tests running with Appium locally and on Sauce Labs
+
 To install:
 ```bash
 npm install
