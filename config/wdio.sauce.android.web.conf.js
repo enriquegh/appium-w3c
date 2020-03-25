@@ -16,7 +16,7 @@ const baseCapabilityAndroid = {
 config.capabilities = cloneCapabilities(baseCapabilityAndroid, NUM_OF_INSTANCES)
 
 config.specs = [
-    './tests/*-native.ts'
+    './tests/*-web.ts'
 ]
 
 exports.config = config
